@@ -1,16 +1,10 @@
-# This is a sample Python script.
+from libraries.read_ROI_values import VideoROISelector
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+def main() -> None:
+    video_path = 'data/0%.mp4'
+    video = VideoROISelector(video_path)
+    x, y, w, h = video.get_roi()
+    print(x, y, w, h)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    main()
