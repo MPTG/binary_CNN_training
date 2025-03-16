@@ -1,6 +1,8 @@
 {
-  "video_path": "data/videos/0%.mp4",
+  "video_path": "data/videos/7,5%.mp4",
   "number of images": 20,
   "roi": [42, 156, 213, 129],
-  "treshold" : 10000
+  "treshold" : 10000,
+  "output_folder_images" : "data/frames_with_binary_mask",
+  "no_frames_to_save": 20
 }
